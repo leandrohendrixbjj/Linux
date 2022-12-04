@@ -1,0 +1,68 @@
+sudo apt update => Atualiza os pacotes instalados com a última versão
+
+hendrix@hendrix: ~$
+     hendrix => Usuário
+	 hendrix => Host
+	 ~ => Usuário não privilegiado. Quando o usuário tem privilégios podemos ver o simbolo #
+
+pwd => Em qual diretório você está
+
+ls => Lista o conteúdo ( menos os ocultos )
+ls -a  => Lista todos os arquivos e diretórios ( Incluso os ocultos ) 	
+ls -l   => Lista diretórios e acessos
+ls -al => Lista diretórios e acessos ( Incluso os ocultos ) 
+
+ls {parte_nome_arquivo} * => procura no diretorio arquivos como nome informado 
+ls {parte_nome_arquivo} ? => procura no diretorio arquivos com um digito no final exemplo: arq1,arq2,arq3
+ls {parte_nome_arquivo} ??  => procura no diretorio arquivos com dois digitos no final exemplo: arq10,arq78,arq90
+ls * {parte_nome_arquivo} *  => procura no diretorio arquivos que possuem parte do seu nome no inicio ou final: exemplo ls *1* => arq1,arq10,arq100,tmp1
+ls ??? [1-5]* => ? Representa qualquer caracter e [1-5] no final deve conter numero de 1 até 5, * qualquer coisa => exemplo arq1  arq2,arq3,arq5,tmp1,tmp2, tmp50
+ls [A,a]??? => Caso seja necessário apontar caracteres maíusculos 
+
+
+ll => Um atalho nativo do comando la -al
+
+pwd --help => Apresenta o manual do comando informado
+ctrl + l => Mesmo que clear
+history => Apresenta o histórico de comandos executados
+************************************************************************************************************************************
+																 CD { Navega nos diretórios }
+
+cd => Atalho para a sua home area, exemplo: /home/hendrix
+cd - => Faz um shift entre o diretório anterior e atual
+cd ~ => Retorna para o home
+cd ~/labs => Retorna para labs um diretório que está na home.
+************************************************************************************************************************************
+																CRIAÇÃO E COPIA DE DIRETÓRIOS
+mkdir -p dir1/dir2 => Cria vários diretórios, sendo que dentro de dir1 está dir2
+
+rm {nome_arquivo} => Apaga somente arquivos.
+
+rm -r {nome_diretorio} => Apaga diretórios e' arquivos.
+
+rm -rf {nome_diretorio} => Apaga diretórios e arquivos. Apaga tudo independe de alguma restrição
+
+cp -r copy {../diretorio de destino} => Para executar a COPIA de deve estar no diretório de origem
+
+cp -r {diretorio de origem}/* {diretorio de destino} => COPIA tudo que está na origem para o destino
+
+cp -r {diretorio de origem} {novo_diretorio} => Cria e Copia para o diretório de destino
+************************************************************************************************************************************
+														 	 MOVER E RENOMEAR DIRETÓRIOS
+															 
+mv {diretorio_existente} {nome do novo_diretorio} => Renomea o diretório. Exemplo mv dir1 dir2.
+mk {diretorio_origem}/* {diretorio_destino} => Move dados para o diretorio de destino. EXEMPLO: mv dir1/* dir2.
+************************************************************************************************************************************
+														 	 PROCURAR DIRETORIOS
+ls 															 
+
+
+
+
+
+
+
+																
+
+
+
